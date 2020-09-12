@@ -1,0 +1,21 @@
+/*$enable-shadows*/
+
+body {
+    background-color: lightgray;
+}
+
+#topnav li {
+    margin-right: 2vw;
+}
+
+a.navbar-brand {
+    font-size: min(4.5vw, 18px);
+}
+
+a.navbar-brand em {
+    font-size: min(3vw, 12px);
+}
+
+nav.navbar {
+    box-shadow: 0 5px 10px slategray;
+}
