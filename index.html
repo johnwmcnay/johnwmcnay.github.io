@@ -14,7 +14,7 @@
 
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">John McNay, <em>software developer</em></a>
@@ -34,24 +34,32 @@
     </div>
 </nav>
 
+<!-- TODO: Info to include in page, portfolio/projects, skills/resume/experience, about me/social media links/contact -->
 
-<!--<nav id="top-nav" class="navbar bg-white navbar-collapse">-->
-<!--    <ul class="row p-0 m-0 w-50 list-unstyled justify-content-around">-->
-<!--        <li><a href="#">HOME</a></li>-->
-<!--        <li><a href="#">PORTFOLIO</a></li>-->
-<!--        <li><a href="#">ABOUT</a></li>-->
-<!--    </ul>-->
-<!--</nav>-->
+<div class="container" id="main-container">
+    <p>Summary</p>
 
-<div class="container">
+    <p>
+        <a class="btn btn-block expandBtn btn-light" data-toggle="collapse" href="#collapsePortfolio" role="button" aria-expanded="false"
+           aria-controls="collapsePortfolio">
+            Portfolio
+        </a>
+    </p>
+    <div class="collapse" id="collapsePortfolio">
+        <div class="card card-body collapseCard">
+            During my time at Codeup Dallas, I learned to create web applications with a combination
+            of HTML5 (JavaScript, CSS) and common libraries, such as jQuery and bootstrap.
 
+        </div>
+    </div>
+
+    <h5>Skills/Resume</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut doloribus facilis laudantium libero mollitia
         nihil nobis non nulla numquam, odit quibusdam quis quisquam quos totam ullam veniam vero vitae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut doloribus facilis laudantium libero mollitia
-        nihil nobis non nulla numquam, odit quibusdam quis quisquam quos totam ullam veniam vero vitae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut doloribus facilis laudantium libero mollitia
-        nihil nobis non nulla numquam, odit quibusdam quis quisquam quos totam ullam veniam vero vitae.</p>
 
+    <h5>About Me</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut doloribus facilis laudantium libero mollitia
+        nihil nobis non nulla numquam, odit quibusdam quis quisquam quos totam ullam veniam vero vitae.</p>
 
 </div>
 
