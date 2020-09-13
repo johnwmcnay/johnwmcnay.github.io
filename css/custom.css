@@ -30,6 +30,11 @@ nav.navbar {
     /*box-shadow: -5px -5px 0 slategray;*/
 }
 
+.expandBtn:hover {
+    background-color: slategray;
+}
+
 .collapseCard {
     font-size: 14px;
+    margin-bottom: 12px;
 }
