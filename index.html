@@ -13,10 +13,10 @@
 <body>
 
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"-->
+<!--            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
     <a class="navbar-brand" href="#">John McNay, <em>software developer</em></a>
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#collapsePortfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -37,7 +37,8 @@
 <!-- TODO: Info to include in page, portfolio/projects, skills/resume/experience, about me/social media links/contact -->
 
 <div class="container" id="main-container">
-    <p>Summary</p>
+
+    <p>Intro</p>
 
     <p>
         <a class="btn btn-block expandBtn btn-light" data-toggle="collapse" href="#collapsePortfolio" role="button"
@@ -48,20 +49,25 @@
     <div class="collapse" id="collapsePortfolio">
         <div class="card card-body collapseCard">
             <div>
-                <h6>Programming</h6>
+                <h6 class="sub-header">Programming</h6>
                 <p>
                     During my time at Codeup Dallas, I gained experience making mobile-responsive web applications with
                     a combination of HTML5 (JavaScript, CSS) and common libraries, such as jQuery and bootstrap.
                 </p>
+                <ul>
+                    <li>Sample</li>
+                    <li>Sample</li>
+                    <li>Sample</li>
+                </ul>
             </div>
             <div>
-                <h6>Journalism/Writing</h6>
+                <h6 class="sub-header">Journalism/Writing</h6>
                 <p>
                     I have published works in two news publications: The Collegian, the student-run Tarrant County
                     College
                     newspaper and the Tyler Morning Telegraph as an intern reporter. Here is a sample of my work:
                 </p>
-                <ul>
+                <ul id="writing-samples">
                     <li>
                         <a href="https://collegian.tccd.edu/a-chance-to-survive/" target="_blank">A chance to
                             survive</a> -
@@ -87,7 +93,7 @@
                 </ul>
             </div>
             <div>
-                <h6>Media Production</h6>
+                <h6 class="sub-header">Media Production</h6>
                 <p>Include examples/links</p>
             </div>
         </div>
@@ -103,7 +109,7 @@
 
     <div class="collapse" id="collapseSkills">
         <div class="card card-body collapseCard">
-            <h6>Resume/Proficiencies</h6>
+            <h6 class="sub-header">Resume/Proficiencies</h6>
             <ul>
                 <li>
 
@@ -131,8 +137,8 @@
 
     <div class="collapse" id="collapseAbout">
         <div class="card card-body collapseCard">
-            <h6 class="card-title">About me</h6>
-            <div class="card-text">
+            <h6 class="sub-header">About me</h6>
+            <div>
                 <ul>
                     <li>
 
