@@ -1,4 +1,10 @@
-/*$enable-shadows*/
+:root {
+    --blue-dark: #343A40;
+    --blue-light: #8DAFCE;
+    --gray: #6A7987;
+    --maroon: #4C323E;
+    --maroon-light: #7D606E;
+}
 
 body {
     background-color: lightgray;
@@ -10,7 +16,7 @@ body {
 
 a.navbar-brand {
     font-size: min(4.5vw, 18px);
-    text-shadow: 1px 1px 2px lightgrey;
+    text-shadow: 1px 1px 2px var(--gray);
 }
 
 a.navbar-brand em {
@@ -32,7 +38,7 @@ nav.navbar {
 }
 
 .expandBtn:hover {
-    background-color: slategray;
+    background-color: #708090;
 }
 
 .collapseCard {
@@ -41,9 +47,44 @@ nav.navbar {
 }
 
 .sub-header {
-    text-shadow: 2px 2px 2px lightgray;
+    text-shadow: 1px 1px 2px var(--gray);
 }
 
 #writing-samples li {
     margin-bottom: 5px;
+}
+
+ul {
+    margin: 0;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--gray);
+}
+
+a.nav-link {
+    color: var(--blue-dark);
+}
+
+a.nav-link:hover {
+    background-color: var(--blue-light);
+    color: var(--gray);
+}
+
+.card-header {
+    color: lightgrey;
+    background-color: var(--maroon);
+    box-shadow: 0 5px 10px slategray;
+}
+
+.collapsed {
+    background-color: var(--maroon-light);
+    opacity: 80%;
+    color: lightgrey;
+}
+
+.collapsed:hover {
+    opacity: 100%;
+    color: var(--blue-light);
 }
